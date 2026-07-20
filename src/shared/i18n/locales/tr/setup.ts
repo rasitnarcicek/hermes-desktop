@@ -2,9 +2,21 @@ export default {
   title: "Yapay Zeka Sağlayıcınızı Ayarlayın",
   subtitle: "Başlamak için bir sağlayıcı seçin ve yapılandırın",
   providerCards: {
-    openrouter: { name: "OpenRouter", desc: "200+ model", tag: "Önerilen" },
-    anthropic: { name: "Anthropic", desc: "Claude modelleri", tag: "" },
-    openai: { name: "OpenAI", desc: "GPT modelleri", tag: "" },
+    openrouter: {
+      name: "OpenRouter",
+      desc: "200+ model",
+      tag: "Önerilen",
+    },
+    anthropic: {
+      name: "Anthropic",
+      desc: "Claude modelleri",
+      tag: "",
+    },
+    openai: {
+      name: "OpenAI",
+      desc: "GPT modelleri",
+      tag: "",
+    },
     local: {
       name: "Yerel / OpenAI Uyumlu",
       desc: "LM Studio, Ollama, Groq, DeepSeek, Together…",
@@ -22,7 +34,9 @@ export default {
     together: "Together AI",
     fireworks: "Fireworks",
     cerebras: "Cerebras",
+    atlascloud: "AtlasCloud",
     mistral: "Mistral",
+    aimlapi: "AIML API",
   },
   serverPreset: "Sunucu Ön Ayarı",
   localGroupLabel: "Yerel Sunucular",

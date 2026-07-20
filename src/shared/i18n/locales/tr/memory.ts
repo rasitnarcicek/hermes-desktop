@@ -10,6 +10,7 @@ export default {
   userProfile: "Kullanıcı Profili",
   entries: "{{count}} girdi",
   addMemory: "Bellek Ekle",
+  loadFailed: "Bellek yüklenemedi",
   addFailed: "Girdi eklenemedi",
   updateFailed: "Girdi güncellenemedi",
   saveFailed: "Kaydedilemedi",

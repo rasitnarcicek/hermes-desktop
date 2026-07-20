@@ -23,8 +23,16 @@ export default {
   install_other: "Kur",
   targetProfile: "Aktif profile kurulur",
   actions: {
-    install: { setup: "Yükle", working: "Yükleniyor...", done: "Yüklendi" },
-    connect: { setup: "Bağlan", working: "Bağlanıyor...", done: "Bağlandı" },
+    install: {
+      setup: "Yükle",
+      working: "Yükleniyor...",
+      done: "Yüklendi",
+    },
+    connect: {
+      setup: "Bağlan",
+      working: "Bağlanıyor...",
+      done: "Bağlandı",
+    },
     create: {
       setup: "Oluştur",
       working: "Oluşturuluyor...",

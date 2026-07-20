@@ -2,8 +2,6 @@ export default {
   title: "Kanban",
   subtitle:
     "Ajanın alıp kendi başına tamamlayabileceği görevler için kalıcı çoklu ajan panosu.",
-
-  // Header actions
   refresh: "Yenile",
   refreshTooltip: "Panoları ve görevleri ajandan yeniden yükle",
   dispatch: "Dağıt",
@@ -13,32 +11,30 @@ export default {
   newTaskTooltip: "Mevcut panoda yeni bir görev oluştur",
   newBoard: "Yeni pano",
   newBoardTooltip: "Yeni bir kanban panosu oluştur",
-
-  // Remote-mode unsupported notice
+  showArchived: "Arşivlenenleri göster",
+  hideArchived: "Arşivlenenleri gizle",
+  archivedTooltip: "Arşivlenmiş sütunu aç/kapat",
   remoteUnsupportedTitle:
     "Kanban, yerel bir Hermes kurulumu veya SSH tünel modu gerektirir.",
   remoteUnsupportedHint:
     "Düz uzak (HTTP + API anahtarı) modu henüz kanban API'sini sunmamaktadır. Panoyu yönetmek için Ayarlar'dan yerel veya SSH tünel moduna geçin.",
-
-  // Column / task statuses
   status: {
     triage: "Triyaj",
     todo: "Yapılacak",
+    scheduled: "Zamanlandı",
     ready: "Hazır",
     running: "Çalışıyor",
     blocked: "Engellendi",
+    review: "İncele",
     done: "Tamamlandı",
+    archived: "Arşivlendi",
   },
-
-  // Card action tooltips
   cardSpecify: "Belirle (şartnameyi genişlet → yapılacak)",
   cardMarkDone: "Tamamlandı işaretle",
   cardReclaim: "Çalışanı geri al",
   cardUnblock: "Engeli kaldır",
   cardBlock: "Engelle",
   cardArchive: "Arşivle",
-
-  // Create-task modal
   createTitle: "Yeni kanban görevi",
   fieldTitle: "Başlık",
   titlePlaceholder: "Ne yapılması gerekiyor?",
@@ -61,16 +57,12 @@ export default {
     "Triyaja koy (bir belirleyici, yapılacak'a yükseltmeden önce şartnameyi genişletir)",
   create: "Görev oluştur",
   creating: "Oluşturuluyor…",
-
-  // New-board modal
   newBoardTitle: "Yeni pano",
   fieldSlug: "Kısa ad",
   slugPlaceholder: "kebab-case, örn. atm10-server",
   fieldDisplayName: "Görünen ad (isteğe bağlı)",
   displayNamePlaceholder: "ATM10 Sunucusu",
   createBoard: "Pano oluştur",
-
-  // Task-detail modal
   detailFallbackTitle: "Görev",
   detailBody: "Açıklama",
   detailSummary: "Son çalıştırma özeti",
@@ -78,13 +70,9 @@ export default {
   detailComments: "Yorumlar ({{count}})",
   detailEvents: "Olaylar ({{count}})",
   commentAnon: "anonim",
-
-  // Prompts / confirmations
   blockReasonPrompt: "Engelleme sebebi?",
   confirmMarkDone: '"{{title}}" tamamlandı olarak işaretlensin mi?',
   confirmArchive: '"{{title}}" arşivlensin mi?',
-
-  // Errors
   moveNotAllowed:
     "Masaüstünden {{from}} → {{to}} taşınamaz. Ajanı veya CLI'ı kullanın.",
   errLoadBoards: "Panolar yüklenemedi",
@@ -98,8 +86,6 @@ export default {
   errArchive: "Görev arşivlenemedi",
   errReclaim: "Geri alınamadı",
   errDispatch: "Dağıtım başarısız",
-
-  // Tooltips & buttons
   hqBoardTooltip: "Claw3D genel merkez panosu (salt okunur ayna)",
   dismissError: "Hatayı kapat",
   closeTaskDetails: "Görev detaylarını kapat",

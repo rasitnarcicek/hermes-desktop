@@ -16,7 +16,7 @@ export default {
   connectRemoteSubtitle: "Çalışan bir Hermes API sunucusunun URL'sini girin.",
   remoteServerUrl: "Sunucu URL",
   remoteApiKey: "API Anahtarı (isteğe bağlı)",
-  remoteApiKeyPlaceholder: "Bearer token (API_SERVER_KEY)",
+  remoteApiKeyPlaceholder: "Taşıyıcı belirteç (API_SERVER_KEY)",
   testingConnection: "Test ediliyor",
   connect: "Bağlan",
   remoteHint:

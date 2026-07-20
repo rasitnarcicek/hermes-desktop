@@ -1,7 +1,7 @@
 export default {
   title: "Ayarlar",
   sections: {
-    hermesAgent: "Hermes Agent",
+    hermesAgent: "Hermes Temsilcisi",
     appearance: "Görünüm",
     privacy: "Gizlilik",
     credentialPool: "Kimlik Bilgisi Havuzu",
@@ -21,6 +21,17 @@ export default {
     community: "Topluluk",
     logs: "Günlükler ve Tanılama",
   },
+  agentSubtitle: "Yerel yapay zeka motoru",
+  desktopTitle: "Hermes One Masaüstü",
+  desktopSubtitle: "Bu masaüstü uygulaması",
+  statusUpToDate: "Güncel",
+  statusUpdateAvailable: "Güncelleme mevcut",
+  statusUpdateReady: "Güncelleme hazır",
+  checkForUpdates: "Güncellemeleri kontrol et",
+  checkingUpdates: "Kontrol ediliyor…",
+  downloadUpdate: "Güncellemeyi indir",
+  retry: "Yeniden Dene",
+  onLatestVersion: "En son sürümü kullanıyorsunuz.",
   theme: {
     label: "Tema",
     system: "Sistem",
@@ -39,28 +50,18 @@ export default {
   },
   language: {
     label: "Dil",
-    english: "English",
+    english: "İngilizce",
     indonesian: "Bahasa Indonesia",
-    japanese: "日本語",
+    japanese: "Japonca",
     spanish: "Español",
-    chinese: "中文",
-    portuguese: "Portuguese",
+    chinese: "Çince",
+    portuguese: "Portekizce",
     turkish: "Türkçe",
     hint: "Arayüz dilini seçin",
   },
   analytics: {
     label: "Anonim kullanım istatistikleri gönder",
     hint: "Hermes One'ı iyileştirmeye yardımcı olmak için anonim, toplulaştırılmış kullanım verilerini projenin analiz hizmetine gönderir. İstediğiniz zaman kapatabilirsiniz.",
-    disclosure: {
-      uuid: "Yalnızca bu cihazda saklanan rastgele bir kurulum tanımlayıcısı (ad, e-posta veya hesap bilgisi yok).",
-      platform: "İşletim sisteminiz, Electron sürümü ve Node.js sürümü.",
-      navigation:
-        "Uygulama içinde hangi ekranları ziyaret ettiğiniz (örn. Sohbet, Oturumlar, Ayarlar). Sohbet içeriği, komutlar, model yanıtları veya dosya içerikleri toplanmaz.",
-      endpoint:
-        "Veriler Hermes analiz hizmetine gönderilir (analytics.hermesone.org). Oturum kayıtları ve sayfa görüntüleme otomatik yakalaması devre dışıdır.",
-      notCollected:
-        "Asla toplanmaz: sohbet mesajları, dosya yolları, API anahtarları, model yapılandırması, hesap bilgileri.",
-    },
   },
   notDetected: "Algılanmadı",
   updatedSuccessfully: "Başarıyla güncellendi!",
@@ -74,7 +75,7 @@ export default {
   forceIpv4: "IPv4'ü Zorla",
   forceIpv4Hint:
     "Bazı ağlarda bağlantı zaman aşımı sorunlarını düzeltmek için IPv6'yı devre dışı bırakın",
-  httpProxy: "HTTP Proxy",
+  httpProxy: "HTTP vekil sunucusu",
   httpProxyHint:
     "Tüm giden bağlantılar için SOCKS veya HTTP proxy (otomatik algılama için boş bırakın)",
   saved: "Kaydedildi",
@@ -92,6 +93,8 @@ export default {
   discoveryError:
     "Sağlayıcının model listesine ulaşılamadı — yine de bir model adı yazabilirsiniz",
   customBaseUrlHint: "OpenAI uyumlu API endpoint'i",
+  compatApiKeyHint:
+    "{{envVar}} olarak saklanır — uzak uç noktalar için zorunlu, localhost için isteğe bağlıdır.",
   poolHint:
     "Otomatik dönüşüm ve yük dengelemesi için aynı sağlayıcıya birden çok API Anahtarı ekleyin. Hermes bunlar arasında geçiş yapacaktır.",
   add: "Ekle",
@@ -111,6 +114,9 @@ export default {
   updating: "Güncelleniyor...",
   updateEngine: "Motoru Güncelle",
   latestVersion: "Zaten güncel",
+  autoUpgradeDesktop: "Masaüstü uygulamasını otomatik yükselt",
+  autoUpgradeDesktopHint:
+    "Uygulama başladığında yeni Hermes One sürümlerini GitHub'dan otomatik olarak indir. İndirmeden önce başlangıç yükseltme düğmesini göstermek için bunu kapatın.",
   runningDiagnosis: "Tanı çalıştırılıyor...",
   runDiagnosis: "Tanı Çalıştır",
   running: "Çalışıyor...",
@@ -145,14 +151,20 @@ export default {
     "Uzak bir Hermes sunucusuna bağlandınız. Model seçimi, sağlayıcı API anahtarları ve kimlik bilgileri sunucunun <code>~/.hermes/.env</code> ve <code>config.yaml</code> dosyalarında yönetilir. Bunları ana bilgisayarda düzenleyin (örn. <code>docker exec -it hermes vi /opt/data/.env</code>) ve kabı yeniden başlatın.",
   connectionMode: "Mod",
   switchedToLocal: "Yerel moda geçildi",
-
-  // Community
   communityTitle: "Topluluk",
   communityHint:
     "Sorular sormak, sorunları bildirmek ve diğer Hermes kullanıcılarıyla sohbet etmek için Discord kanalımıza katılın.",
   joinDiscord: "Discord Kanalına Katıl",
-
-  // SSH & Server Config
+  communityLinksHint:
+    "Hermes One topluluğuyla bağlantı kurun, yardım alın ve güncel kalın.",
+  linkWebsite: "Web sitesi",
+  linkDiscord: "Discord",
+  linkX: "X",
+  linkTelegram: "Telegram",
+  supportTitle: "Geliştiriciyi destekleyin",
+  supportHint:
+    "Hermes One ücretsiz ve açık kaynaklıdır — size yardımcı oluyorsa, geliştirilmesini desteklemeyi düşünebilirsiniz.",
+  supportKofi: "Ko-fi üzerinden destekle",
   modeSsh: "SSH Tüneli",
   modeSshHint:
     "SSH üzerinden uzak bir Hermes'e tünel oluşturun — açık bağlantı noktası veya API anahtarı gerekmez.",

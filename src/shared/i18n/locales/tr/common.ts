@@ -7,6 +7,9 @@ export default {
   loadingShort: "Yükleniyor",
   saved: "Kaydedildi",
   save: "Kaydet",
+  done: "Bitti",
+  edit: "Düzenle",
+  change: "Değiştir",
   search: "Ara",
   searchPlaceholder: "Ara...",
   show: "Göster",
@@ -47,4 +50,6 @@ export default {
   errorMessage: "Beklenmeyen bir hata oluştu.",
   tryAgain: "Tekrar Dene",
   copied: "Kopyalandı!",
+  showMore: "Daha fazla göster",
+  showLess: "Daha az göster",
 } as const;

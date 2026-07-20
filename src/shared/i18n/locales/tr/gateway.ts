@@ -1,5 +1,5 @@
 export default {
-  title: "Gateway",
+  title: "Ağ geçidi",
   messagingGateway: "Mesajlaşma Geçidi",
   platforms: "Platformlar",
   status: "Durum",
@@ -42,6 +42,7 @@ export default {
   disable: "Devre dışı bırak",
   enable: "Etkinleştir",
   enablePlatform: "Platformu etkinleştir",
+  setupFirst: "Bu platformu etkinleştirmeden önce kimlik bilgilerini ayarlayın",
   strongWarning: "Güçlü uyarı",
   riskDesc:
     "{{name}}, bu mesajlaşma platformunun hassas yerel araçları çalıştırmasına izin verir. Bunu yalnızca güvenilir, özel kanallar ve bilinen kullanıcılar için etkinleştirin.",
@@ -53,5 +54,14 @@ export default {
     error: "Hata",
     ready: "Hazır",
     configured: "Yapılandırıldı",
+  },
+  apiServerKey: {
+    title: "API Sunucu Anahtarı",
+    configured: "Anahtar yapılandırıldı",
+    missing: "Anahtar eksik; sohbet bu olmadan başarısız olacak.",
+    generate: "Anahtar oluştur",
+    regenerating: "Oluşturuluyor…",
+    generateHint:
+      "Bu anahtar, masaüstü ve yerel ağ geçidi arasında paylaşılır. Yenisini oluşturmak ağ geçidini otomatik olarak yeniden başlatır.",
   },
 } as const;

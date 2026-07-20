@@ -43,7 +43,10 @@ export default {
     label: "Video Oluşturma",
     description: "Metin veya görsel komutlarından video oluşturun",
   },
-  tts: { label: "Metin-Ses", description: "Metni konuşmaya dönüştürün" },
+  tts: {
+    label: "Metin-Ses",
+    description: "Metni konuşmaya dönüştürün",
+  },
   skills: {
     label: "Yetenekler",
     description:

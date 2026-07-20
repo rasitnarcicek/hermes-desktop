@@ -12,17 +12,17 @@ export default {
     showDetails: "Ayrıntıları göster",
   },
   apiKeyBanner: {
-    lead: "API Server Key not set — chat will fail.",
-    setNow: "SET NOW",
+    lead: "API Sunucu Anahtarı ayarlanmadı; sohbet başarısız olacak.",
+    setNow: "ŞİMDİ AYARLA",
   },
   apiKeyModal: {
-    title: "Set API Server Key",
+    title: "API Sunucu Anahtarını Ayarla",
     description:
       "API_SERVER_KEY is required for the Hermes gateway to authenticate requests. Set it now to enable chat.",
-    label: "API Server Key",
-    placeholder: "sk-… or any secret",
-    autoGenerate: "Auto-generate",
-    hint: "You can paste your own key or generate a random UUID.",
+    label: "API Sunucu Anahtarı",
+    placeholder: "sk-… veya herhangi bir gizli anahtar",
+    autoGenerate: "Otomatik oluştur",
+    hint: "Kendi anahtarınızı yapıştırabilir veya rastgele bir UUID oluşturabilirsiniz.",
   },
   fix: {
     apply: "Düzeltmeyi uygula",
@@ -30,4 +30,4 @@ export default {
     success: "Düzeltme uygulandı.",
     failure: "Düzeltme başarısız.",
   },
-};
+} as const;

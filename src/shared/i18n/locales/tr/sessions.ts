@@ -6,6 +6,7 @@ export default {
   empty: "Henüz oturum yok",
   newConversation: "Yeni konuşma",
   newChat: "Yeni Sohbet",
+  closeTab: "Sekmeyi kapat",
   today: "Bugün",
   yesterday: "Dün",
   thisWeek: "Bu Hafta",
@@ -13,6 +14,15 @@ export default {
   emptyHint: "İlk oturumunuzu oluşturmak için sohbet etmeye başlayın",
   messages: "msj",
   messageSingular: "msj",
+  delete: "Konuşmayı sil",
+  rename: "Konuşmayı yeniden adlandır",
+  deleteConfirmTitle: "Konuşmayı sil",
+  deleteConfirm:
+    "Bu konuşma silinsin mi? Bu işlem geri alınamaz — hem mesajlar hem de oturum kaydı kalıcı olarak kaldırılacaktır.",
+  deleteClose: "Silme onayını kapat",
+  deleteCancel: "İptal",
+  deleteConfirmAction: "Sil",
+  deleteDeleting: "Siliniyor...",
   selectMode: "Seç",
   cancelSelect: "İptal",
   selectedCount: "{{count}} seçili",
@@ -24,13 +34,4 @@ export default {
   deleteSelectedConfirm:
     "Seçilen {{count}} oturum silinsin mi? Bu işlem geri alınamaz — mesajlar ve oturum kayıtları kalıcı olarak kaldırılacaktır.",
   deleteSelectedClose: "Toplu silme onayını kapat",
-  delete: "Konuşmayı sil",
-  rename: "Konuşmayı yeniden adlandır",
-  deleteConfirmTitle: "Konuşmayı sil",
-  deleteConfirm:
-    "Bu konuşma silinsin mi? Bu işlem geri alınamaz — hem mesajlar hem de oturum kaydı kalıcı olarak kaldırılacaktır.",
-  deleteClose: "Silme onayını kapat",
-  deleteCancel: "İptal",
-  deleteConfirmAction: "Sil",
-  deleteDeleting: "Siliniyor...",
 } as const;
